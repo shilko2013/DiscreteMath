@@ -1,7 +1,5 @@
 package com.shilko.ru;
 
-import javafx.util.Pair;
-
 import java.io.FileNotFoundException;
 import java.util.*;
 
@@ -10,9 +8,9 @@ public class Main{
         System.out.println("Строки, включающие d, также нужно вводить!");
         Bool b = new Bool();
         try {
-            b.input(new String("D://1.txt"));
+            b.input("1.txt");
         }
-        catch (FileNotFoundException e) {}
+        catch (FileNotFoundException ignored) {}
         while (b.getSteps()>0) {
             b.step();
             b.output(true);
